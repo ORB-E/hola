@@ -12,7 +12,6 @@ async function animation(){
             const interval = setInterval(()=>{
                 char=String.fromCharCode(random(32,122))
                 content.textContent=txt+char
-                console.log(char==text[i],text,i)
                 if(char==text[i]){
                     clearInterval(interval)
                     resolve()
